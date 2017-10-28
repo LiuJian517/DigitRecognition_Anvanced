@@ -10,5 +10,14 @@
 * result.csv: 测试结果保存文件
 
 ## 模型使用
-### 先用model.fit训练模型，通过sklearn包的joblib模块保存为.m文件
-### read_image读入图片，resize大小，读出数据；加载训练好的模型，预测输出
+model_fit.py:支持向量机分类器
+model_fit_knn.py：KNN分类器
+
+运行步骤：
+1）运行model_fit.py，训练支持向量机分类器，保存结果
+2）运行model_fit_knn.py,训练KNN分类器，保存结果
+3） 运行digit_gen.py ,从测试集当中反向生成图片，保存在digits_gen目录中
+4） 将自己手写的图片（PS、美图等）保存在number文件夹中
+5） 运行read_image.py，测试图片识别的效果
+6） 结果：测试集图片识别成功率：90%
+	  PS生成的图片识别成功率：70%
