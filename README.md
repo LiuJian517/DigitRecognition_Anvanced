@@ -11,4 +11,4 @@
 
 ## 模型使用
 ### 先用model.fit训练模型，通过sklearn包的joblib模块保存为.m文件
-### read_image读入图片数据，加载模型，预测输出
+### read_image读入图片，resize大小，读出数据；加载训练好的模型，预测输出
